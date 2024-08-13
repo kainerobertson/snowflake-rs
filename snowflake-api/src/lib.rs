@@ -508,6 +508,6 @@ impl SnowflakeApi {
             )
             .await?;
 
-        Ok(resp)
+        Ok(resp)    
     }
 }

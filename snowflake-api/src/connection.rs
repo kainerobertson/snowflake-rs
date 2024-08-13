@@ -170,7 +170,7 @@ impl Connection {
             .json(&body)
             .send()
             .await?;
-
+        log::debug!("TOSSEDERROR: {:?}", resp);
         Ok(resp.json::<R>().await?)
     }
 
